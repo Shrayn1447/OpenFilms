@@ -1,27 +1,32 @@
 export const index = [
   {
     id: 1,
+    idList: 10,
     text: "Главная",
-    ref:'/'
+    ref: "/",
   },
   {
     id: 2,
+    idList: 11,
     text: "Все категории",
-    ref:'/'
+    ref: "/",
   },
   {
     id: 3,
+    idList: 12,
     text: "Фильмы",
-    ref:'/'
+    ref: "/",
   },
   {
     id: 4,
+    idList: 13,
     text: "Мультфильмы",
-    ref:'/'
+    ref: "/",
   },
   {
     id: 5,
+    idList: 14,
     text: "Сериалы",
-    ref:'/'
+    ref: "/",
   },
 ];

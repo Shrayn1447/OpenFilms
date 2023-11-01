@@ -7,7 +7,7 @@ const Card = ({ el }) => {
   return (
       <li className=" cursor-pointer  ease-in-out relative  justify-self-center transition-all hover:-translate-y-1 hover:scale-[1.02] hover:z-10 rounded-2xl" 
       onClick={() => router.push(`/MoviDetails?movi=${el.id}`,{ scroll: true })}
-      key={el?.id}>
+      key={el.externalId.kpHD}>
         <Image
         src={`${el.poster.url}`}
         width={400}
