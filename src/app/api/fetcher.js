@@ -1,5 +1,5 @@
 export const fetcher = (url) => fetch(url,{
     headers:{
-        "X-API-KEY": "H3WV5M2-AVEMVNY-JHF5X3V-WZBYAWH"
+        "X-API-KEY": "6E58WF2-88QME5B-QVTVPMA-S1XS9EM"
     }
 }).then(r => r.json())

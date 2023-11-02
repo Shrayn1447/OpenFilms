@@ -9,7 +9,7 @@ const MobileMenu = () => {
   const [isMenu, setMenu] = useState(false);
   return (
     <>
-      <div className="block lg:hidden">
+      <div className="block md:hidden">
         <button
           onClick={() => {
             setMenu((n) => !n);

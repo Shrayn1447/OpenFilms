@@ -1,9 +1,9 @@
 "use client";
-import React from "react";
+import React, { useCallback } from "react";
 import { useSearchParams } from "next/navigation";
-import { useInfoFilms } from "../api/useInfoFilm";
-import CardFilm from "../components/CardFilm";
-import VideoPlayer from "../components/VideoPlayer";
+import { useInfoFilms } from "../../api/useInfoFilm";
+import CardFilm from "../../components/CardFilm";
+import VideoPlayer from "../../components/VideoPlayer";
 const MoviDetails = () => {
   const searchParams = useSearchParams();
   const id = searchParams.get("movi");
@@ -18,7 +18,7 @@ const MoviDetails = () => {
   }
   return (
     <div className="mt-32 flex flex-col items-center w-full ">
-      <div className="flex sm:flex-row flex-col md:justify-around items-center w-full mb-[70px]">
+      <div className="flex lg:flex-row flex-col items-center mb-[70px]">
          <CardFilm data={data}/>
         <div className="m-[20px]">
           <h1 className="text-4xl text-orange-500 font-bold">{data.name}</h1>
